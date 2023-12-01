@@ -1,0 +1,178 @@
+_//print your name is CPP
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    cout<<"Satish kumawat";
+}
+_____________________________________________________________________________________________________________________________________
+//area of rectangle
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int length,width,area;
+    cout<<"Please enter the values:-\n";
+    cout<<"Please enter the value of length: \n";
+    cin>>length;
+    cout<<"Please enter the value of width: ";
+    cin>>width;
+    area=length*width;
+    cout<<"area is: "<<area;
+}
+_______________________________________________________________________________________________________________________________________
+//swap of two numbers
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int a,b,c;
+    cout<<"Please enter first and second number :\n";
+    cin>>a>>b;
+    cout<<"first and second number is :\n"<<a<<b;
+    c=a;
+    a=b;
+    b=c;
+    cout<<"\nYour number after swap is\n"<<a<<b;
+}
+_______________________________________________________________________________________________________________________________________
+//calculate temperature from celcius to farenheit
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    float celcius,farenheit;
+    cout<<"Please enter calcius:\n";
+    cin>>celcius;
+    farenheit=celcius*1.8 + 32;
+    cout<<"\nYour temperature in farenheit is: "<<farenheit;
+}
+________________________________________________________________________________________________________________________________________
+//sum 1 to n (loop)
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n,sum=0;
+    cout<<"Please enter the nummber:\n";
+    cin>>n;
+    for(int i=0; i<=n; i++)
+    {
+        sum=sum+i;
+    }
+    cout<<"Your sum is "<<sum;
+}
+_________________________________________________________________________________________________________________________________________
+
+//area of square
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int side,area;
+    cout<<"Please enter side: ";
+    cin>>side;
+    area=side*side;
+    cout<<"area is : "<<area;
+}
+__________________________________________________________________________________________________________________________________________
+// calculate addition,subtraction,multiplication,division
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    char alpha;
+    cout<<"Please enter your task:\nAddition\nSubtraction\nMultiplication\nDivision\n";
+    cin>>alpha;
+    if(alpha=='a'||alpha=='A')
+    {
+        int a,b,ans;
+        cout<<"Please enter the numbers for addition\n";
+        cin>>a>>b;
+        ans=a+b;
+        cout<<"The sum of a and b is: "<<ans;
+    }
+    else if(alpha=='s'||alpha=='S')
+    {
+        int a,b,ans;
+        cout<<"Please enter the numbers for subtraction\n";
+        cin>>a>>b;
+        ans=a-b;
+        cout<<"The subtraction of a and b is: "<<ans;
+    }
+    else if(alpha=='m'||alpha=='M')
+    {
+        int a,b,ans;
+        cout<<"Please enter the numbers for multiplication\n";
+        cin>>a>>b;
+        ans=a*b;
+        cout<<"The multiplication of a and b is: "<<ans;
+    }
+    else if(alpha=='d'||alpha=='D')
+    {
+        int a,b,ans;
+        cout<<"Please enter the numbers for division\n";
+        cin>>a>>b;
+        ans=a/b;
+        cout<<"The division of a and b is: "<<ans;
+    }
+    else{
+        cout<<"Please enter the character between:-\nA=Addition\nS=subtraction\nM=multiplication\nD=division";
+    }
+}
+_____________________________________________________________________________________________________________________________________________________________
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    char alpha;
+    cout<<"Please enter the task given bilow:\nA=armstrong\nF=factor\nC=fibonacci\n";
+    cin>>alpha;
+    if(alpha=='a'||alpha=='A')//armstrong number
+    {
+        int num,rem,sum=0;
+        cout<<"Please enter the number to check the number is armstrong or not: ";
+        cin>>num;
+        int temp=num;
+        for(int i=1; i<=num; i++)
+        {
+            rem=sum%10;
+            sum=sum+rem*rem*rem;
+            num=num/10;
+        }
+        if(temp==sum)
+        {
+            cout<<"The number is armstrong";
+        }
+        else{cout<<"The number is not armstrong";}
+    }
+    else if(alpha=='f'||alpha=='F')//number factor
+    {
+        int num;
+        cout<<"Pelase enter the number: ";
+        cin>>num;
+        int sum=1;
+        for(int i=1; i<=num; i++)
+        {
+           sum=sum*i;
+        }
+        cout<<""<<sum;
+        
+    }
+    else if(alpha=='c'||alpha=='C')
+    {
+    int n1=0,n2=1,n3;
+    int num;
+    cout<<"enter the value of num";
+    cin>>num;
+    cout<<n1<<n2;
+    for(int i=1;i<=num;i++)
+    {
+        n3=n1+n2;
+        cout<<n3;
+        n1=n2;
+        n2=n3;
+    }
+    
+    }
+    
+}
