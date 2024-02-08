@@ -1,0 +1,158 @@
+//print: ax+by where(a and b are user input)
+#include<bits/stdc++.h>
+using namespace std;
+void print(int a,int b)
+{
+    cout<<a<<"x+"<<b<<"y";
+}
+int main()
+{
+    int a,b;
+    cout<<"Enter the value of a and b: ";
+    cin>>a>>b;
+    print(a,b);
+}
+______________________________________________________________________________________________________________________________________________________________________________________________
+/*calculate: 3xy−7z
+calculate: ba+4c
+calculate: xy+2z
+calculate: 2^d * 3c−e             I choose this question  
+calculate: e^2* b 
+calculate: a/sqrt(b,4)+3c
+calculate: 2x+5
+calculate: 3y2−7*/
+#include<bits/stdc++.h>
+using namespace std;
+int solve(int d,int c,int e)
+{
+    int ans=pow(2,d)*3*c-e;
+    return ans;
+}
+
+int main()
+{
+    int d,c,e;
+    cout<<"Enter the power which you want of 2: ";
+    cin>>d;
+    cout<<"Enter the value of C: ";
+    cin>>c;
+    cout<<"Enter the value of E: ";
+    cin>>e;
+    int anss=solve(d,c,e);
+    cout<<"The product is: "<<anss;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+/*print tan(a)+tan(b) where(a and b are user input)
+print: sin(a)+sin(b) where(a and b are user input)
+print: sin(a)/sin(b) where(a and b are user input)
+print: axy+by^3 where(a and b are user input)           i choose this question*/
+#include<bits/stdc++.h>
+using namespace std;
+void print(int a,int b)
+{
+    cout<<a<<"xy+"<<b<<"y^3";
+}
+
+int main()
+{
+    int a,b;
+    cout<<"Enter the value of A: ";
+    cin>>a;
+    cout<<"Enter the value of B: ";
+    cin>>b;
+    print(a,b);
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+/*calculate: 3xyx−7zu where u is constant
+calculate: bap+4cp 
+where p is constant
+
+calculate: xy+2z 
+where z is constant
+
+calculate: 2^d * 3c−e 
+where d is constant
+
+calculate: e^2* b where e is constant            
+
+calculate: a/sqrt(b,4)+3c  
+where c is constant
+
+calculate: 2x+5x+8  where x is constant    .................................................
+calculate: 3y2−7 
+where y is constant*/
+#include<bits/stdc++.h>
+using namespace std;
+void print(int x)
+{
+    int ans=2*x+5*x+8;
+    cout<<ans;
+}
+
+int main()
+{
+    int x;
+    print(x);
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+/*print tan(a)+tan(b) where(a and b are user input)
+print: sin(a)+sin(b) where(a and b are user input)
+print: sin(a)/sin(b) where(a and b are user input)*/
+#include<bits/stdc++.h>
+using namespace std;
+void print(int a,int b)
+{
+    cout<<"sin("<<a<<")/sin("<<b<<")";
+}
+
+int main()
+{
+    int a,b;
+    cout<<"Enter the value of A: ";
+    cin>>a;
+    cout<<"Enter the value of B: ";
+    cin>>b;
+    print(a,b);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

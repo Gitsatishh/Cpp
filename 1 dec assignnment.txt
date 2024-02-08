@@ -1,0 +1,341 @@
+/*You want to greet the user and print their name.
+Write a C++ program that takes the user's name as input and outputs a personalized greeting.*/
+//without parameter and without return type
+#include <iostream>
+using namespace std;
+void greet()
+{
+    string names;
+    cout<<"Please enter your name:\n";
+    cin>>names;
+    cout<<"Hello "<<names<<". Nice to meet you.";
+}
+int main()
+{
+    greet();
+    return 0;
+}
+
+______________________________________________________________________________________________________________________________________________________________________________________________
+
+//Create a program that takes two numbers as input and prints their sum.
+//without parameter with return type
+#include<bits/stdc++.h>
+using namespace std;
+int sum()
+{
+    int a,b,c;
+     cout<<"Please enter two numbers:\n";
+     cin>>a>>b;
+     c=a+b;
+     return c;
+}
+int main()
+{
+    int ans=sum();
+    cout<<"The sum is: "<<ans;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Design a program that prompts the user for their age and prints a message mentioning their age.
+//with parameter without return type
+#include<bits/stdc++.h>
+using namespace std;
+void message(int age)
+{
+    cout<<"Now i know your age\nYour age is: "<<age;
+}
+int main()
+{
+    int age;
+    cout<<"Please enter your age: ";
+    cin>>age;
+    message(age);
+    
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+//Write a C++ program that takes a temperature in Celsius as input and outputs the equivalent temperature in Fahrenheit.
+//with parameter with return type
+#include<bits/stdc++.h>
+using namespace std;
+float temp(float Celsius)
+{
+    float Fahrenheit; 
+    Fahrenheit=Celsius * 1.8 + 32;
+    return Fahrenheit;
+}
+int main()
+{
+    float Celsius;
+    cout<<"Please enter the temperature in Celsius: ";
+    cin>>Celsius;
+    temp(Celsius);
+    float Fahrenheit=temp(Celsius);
+    cout<<"The temperature form Celsius to Fahrenheit is: "<<Fahrenheit;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+/*You need to gather information about a person's name, age, and favorite color.
+Develop a program that takes these inputs and prints a summary.*/
+//with parameter with without return type
+#include<bits/stdc++.h>
+using namespace std;
+void sentence(string first,string last,int age,string color)
+{
+    cout<<"Great!!,Now i know your name is "<<first<<" "<<last <<" and your age is "<<age<<" and your favorite color is "<<color;
+}
+int main()
+{
+    string first,last;
+    cout<<"Please enter your name: ";
+    cin>>first>>last;
+    int age;
+    cout<<"Please enter your age: ";
+    cin>>age;
+    string color;
+    cout<<"Please enter your favorite color: ";
+    cin>>color;
+    sentence(first,last,age,color);
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Create a program that asks the user for an integer input and prints whether it's even or odd.
+//with parameter with without return type
+#include<bits/stdc++.h>
+using namespace std;
+void number(int num)
+{
+    if(num%2==0)
+    {
+        cout<<"The number is even";
+    }
+    else{cout<<"The number is odd";}
+}
+int main()
+{
+    int num;
+    cout<<"Please enter your number: ";
+    cin>>num;
+    number(num);
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+/*Design a simple banking program that asks the user for their initial balance 
+and a withdrawal amount, then prints the remaining balance.*/
+//with parameter without return type
+#include<bits/stdc++.h>
+using namespace std;
+void remi(int remaining)
+{
+    cout<<"The remaining balance is: "<<remaining;
+}
+int main()
+{
+    int initial,withdrawal;
+    cout<<"Please enter your initial balance: ";
+    cin>>initial;
+    cout<<"Please enter your withdrawal amount: ";
+    cin>>withdrawal;
+    int remaining=initial - withdrawal;
+    remi(remaining);
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+
+/*Write a program that asks the user to enter a password. If the entered password matches a predefined one,
+print "Access Granted," otherwise, print "Access Denied.".*/
+//with parameter without return type
+#include<bits/stdc++.h>
+using namespace std;
+void check(int passcode, int code)
+{
+    if(passcode==code)
+    {
+        cout<<"Access Granted!";
+    }
+
+    else{cout<<"Access Denied!";}
+}
+int main()
+{
+    int code=112233;
+    int passcode;
+    cout<<"Please enter your password:   ";
+    cin>>passcode;
+    check(passcode,code);
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Develop a program that takes a single character as input and prints whether it is a vowel or a consonant.
+//without parameter with return type
+#include<bits/stdc++.h>
+using namespace std;
+char check()
+{
+    char alpha;
+    cout<<"Please enter a character:  ";
+    cin>>alpha;
+    return alpha;
+}
+int main()
+{
+   char chara=check();
+   if(chara=='a'||chara=='e'||chara=='i'||chara=='o'||chara=='u'||chara=='A'||chara=='E'||chara=='I'||chara=='O'||chara=='U')
+   {
+       cout<<"The character is vovel";
+   }
+   else
+   {
+    cout<<"The character is consonant";   
+   }
+   
+    
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+
+//Create a C++ program that takes a sentence as input and outputs the sentence.
+//without parameter without return type
+#include<bits/stdc++.h>
+using namespace std;
+void sent()
+{
+    string santance;
+    cout<<"Please enter the sentence\n";
+    getline(cin,santance);
+    cout<<"Great!!,Now i know what you write:\n"<<santance;
+}
+int main()
+{
+    sent();
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

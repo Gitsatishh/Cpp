@@ -1,0 +1,185 @@
+/*Q:1) calculate (a*b)+(y*q)+(z*R)
+calculate ((x/b)+(a*q)+(y*c))/b
+(2×3)+(5×4)+(7×8)
+((10/2)+(3×6)+(5×2))/2
+(4×7)+(9×2)+(6×3)
+((8/4)+(2×5)+(7×3))/4
+(3×6)+(4×2)+(9×5)
+((12/3)+(6×2)+(4×8))/3
+(5×7)+(2×4)+(6×9)
+((9/3)+(8×2)+(5×3))/3
+(6×5)+(3×7)+(2×9)
+((15/5)+(4×3)+(6×2))/5*/
+#include <bits/stdc++.h>
+using namespace std;
+int sum(int a,int b,int y,int q,int z,int r)
+{
+   int ans=(a*b)+(y*q)+(z*r);
+    return ans;
+}
+
+int main()
+{
+    int a,b,y,q,z,r;
+    cout<<"Enter the value of A: ";
+    cin>>a;
+    cout<<"Enter the value of B: ";
+    cin>>b;
+    cout<<"Enter the value of Y: ";
+    cin>>y;
+    cout<<"Enter the value of Q: ";
+    cin>>q;
+    cout<<"Enter the value of Z: ";
+    cin>>z;
+    cout<<"Enter the value of R: ";
+    cin>>r;
+    int anss=sum(a,b,y,q,z,r);
+    cout<<"The sum of your question is: "<<anss;
+    return 0;
+}
+___________________________________________________________________________________________________________________________________________________________________________________________
+ 
+ANS FORM MORE QUESTION: 
+____________________________________________________
+//Q:1)Prompt the user for a temperature in Celsius and convert it to Fahrenheit. Print the result in a meaningful message.
+#include<bits/stdc++.h>
+using namespace std;
+float convert(float Celsius)
+{
+    float fahrenheit=Celsius*1.8 + 32;
+    return fahrenheit;
+}
+int main()
+{
+    float Celsius;
+    cout<<"Enter the value in Celsius: ";
+    cin>>Celsius;
+    float ans=convert(Celsius);
+    cout<<"Your temperature from Celsius to fahrenheit is: "<<ans;
+    return 0;   
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q:2)Ask the user to enter the radius of a circle. Calculate the area and print a message like 
+//"The area of the circle with radius [radius] is [area]."
+#include<bits/stdc++.h>
+using namespace std;
+void ar(float radius)
+{
+    float area=3.14*radius*radius;
+    cout<<"The area of the circle with radius: "<<radius<<" is: "<<area;
+}
+
+int main()
+{
+    float radius;
+    cout<<"Enter radius: ";
+    cin>>radius;
+    ar(radius);
+    return 0;   
+}
+____________________________________________________________________________________________________________________________________________________________________________________________//Q:3)Take input for principal amount, rate of interest, and time. Calculate the simple interest and display the result.
+#include<bits/stdc++.h>
+using namespace std;
+float calculateInterest(int main_amount,int time_period,float interest_rate)
+{
+    float simple_interest;
+    simple_interest=(main_amount*interest_rate*time_period)/100;
+    return simple_interest;
+}
+int main()
+{
+    int main_amount,time_period;
+    float interest_rate;
+    cout<<"Please enter the principal amount:\n";
+    cin>>main_amount;
+    cout<<"Please enter the interest rete:\n";
+    cin>>interest_rate;
+    cout<<"Please enter the time in years:\n";
+    cin>>time_period;
+    float ans=calculateInterest(main_amount,time_period,interest_rate);
+    cout<<"The simple interest of your loan is: "<<ans;
+    
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+//Q:4)Prompt the user to enter their weight (in kilograms) and height (in meters). Calculate the Body Mass Index (BMI) 
+//and print a message like "Your BMI is [BMI]."
+#include<bits/stdc++.h>
+using namespace std;
+void bmi(float weight,float height)
+{
+    float BMI=weight/height;
+    cout<<"Your BMI is: "<<BMI;
+}
+
+int main()
+{
+  float weight,height;
+  cout<<"Enter your weight in kg: ";
+  cin>>weight;
+  cout<<"Enter your height in meters: ";
+  cin>>height;
+  bmi(weight,height);
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q:5)print  quadratic equation (ax^2 + bx + c = 0) from the user and solve for the roots.
+//Display the roots or an appropriate message.(5x^2+6x+9=0)
+#include<bits/stdc++.h>
+using namespace std;
+void quad(int a,int b,int c)
+{
+    cout<<a<<"x^2+"<<b<<"x+"<<c<<"=0";
+}
+
+int main()
+{
+  int a,b,c;
+  cout<<"Enter the value of a: ";
+  cin>>a;
+  cout<<"Enter the value of b: ";
+  cin>>b;
+  cout<<"Enter the value of c: ";
+  cin>>c;
+  quad(a,b,c);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

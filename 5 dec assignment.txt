@@ -1,0 +1,289 @@
+//Q:1)Write a C++ program that defines a function add which takes two integers as arguments and prints their sum.
+//with parameter with return type
+#include<bits/stdc++.h>
+using namespace std;
+int sum(int a,int b)
+{
+    int c=a+b;
+    return c;
+}
+int main()
+{
+    int a,b;
+    cout<<"Please ennter two number to do sum:\n";
+    cin>>a>>b;
+    int ans=sum(a,b);
+    cout<<"The sum of "<<a<<" and "<<b<<" is "<<ans;
+}
+______________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q:2)Create a C++ program with a function checkEvenOdd that takes an integer as an argument and prints whether it is even or odd.
+//with parameter without return type
+#include<bits/stdc++.h>
+using namespace std;
+void check(int num)
+{
+    if(num%2==0)
+    {cout<<"The number is even";}
+    else{cout<<"The number is odd";}
+}
+int main()
+{
+   int num;
+   cout<<"Please enter a number: ";
+   cin>>num;
+   check(num);
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q:3)Design a C++ program that includes a function greet without any arguments. The function prints a greeting message.
+//without parameter with return type
+#include<bits/stdc++.h>
+using namespace std;
+string greet()
+{
+    string name;
+    cout<<"Please enter your name:\n";
+    getline(cin,name);
+    return name;
+}
+int main()
+{
+  string names=greet();
+  cout<<"Hello "<<names<<". I hope you are doing well ";
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+//Q:4)Write a C++ program with a function findMax that takes three integers as arguments and returns the maximum among them.
+//with parameter without return type
+#include<bits/stdc++.h>
+using namespace std;
+void check(int num1,int num2,int num3)
+{
+    if(num1>num2&&num1>num3)
+    {
+        cout<<"Number one is max";
+    }
+    else if(num2>num1&&num2>num3)
+    {
+        cout<<"Second number is max";
+    }
+    else{
+        cout<<"Third number is max";
+    }
+}
+int main()
+{
+    int num1,num2,num3;
+    cout<<"Please enter three numbers:\n";
+    cin>>num1>>num2>>num3;
+    check(num1,num2,num3);
+    
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+//Q:5)Develop a C++ program with a function multiply which takes two float numbers as arguments and prints their product.
+//with parameter with return type
+#include<bits/stdc++.h>
+using namespace std;
+float product(float a,float b)
+{
+    float c=a*b;
+    return c;
+}
+int main()
+{
+    float a,b;
+    cout<<"Please enter two number:\n";
+    cin>>a>>b;
+    float ans=product(a,b);
+    cout<<"The product of "<<a<<" and "<<b<<" is "<<ans;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q:6)Create a C++ program that defines a function printTable which takes an integer as an argument and prints its multiplication table up to 10.
+//with parameter without return type
+#include<bits/stdc++.h>
+using namespace std;
+void table(int a)//10
+{
+    for(int i=a;i<=10;i++)
+    {
+        for(int j=1;j<=10;j++)
+        {
+            cout<<i<<"*"<<j<<"="<<i*j<<"\n";
+        }
+        cout<<"\n";
+    }
+}
+int main()
+{
+    int a;
+    cout<<"Please enter a number:\n";
+    cin>>a;
+    table(a);//10
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+/*AQ:7)Implement a C++ program with a function calculateInterest that takes principal amount, rate, and time as arguments 
+and prints the simple interest.*/
+//WITH PARAMETER WITH RETURN typede
+#include<bits/stdc++.h>
+using namespace std;
+float calculateInterest(int main_amount,int time_period,float interest_rate)
+{
+    float simple_interest;
+    simple_interest=(main_amount*interest_rate*time_period)/100;
+    return simple_interest;
+}
+int main()
+{
+    int main_amount,time_period;
+    float interest_rate;
+    cout<<"Please enter the principal amount:\n";
+    cin>>main_amount;
+    cout<<"Please enter the interest rete:\n";
+    cin>>interest_rate;
+    cout<<"Please enter the time in years:\n";
+    cin>>time_period;
+    float ans=calculateInterest(main_amount,time_period,interest_rate);
+    cout<<"The simple interest of your loan is: "<<ans;
+    
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+/*AQ:8)Design a C++ program with a function isPrime that takes an integer as an argument and returns true if it's a prime number,
+false otherwise..*/
+#include<bits/stdc++.h>
+using namespace std;
+int check(int num)
+{
+    int flag=0;
+    for(int i=2; i<num;i++)
+    {
+            if(num%i==0)
+            {
+                flag=1;
+                break;
+            }
+    }
+    return flag;
+}
+int main()
+{
+     int num;
+     cout<<"Please enter the number: ";
+     cin>>num;
+     int ans = check(num);
+     if(ans==1)
+     {
+         cout<<"Not Prime";
+     }
+     else
+     {
+         cout<<"Prime";
+     }
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+/*AQ:9)Write a C++ program with a function that calculates and returns the length of a string.
+Pass the string as an argument to the function*/
+#include<bits/stdc++.h>
+using namespace std;
+int calculate(string name)
+{
+    int len= name.length();
+    return len;
+}
+int main()
+{
+     string name;
+     cin>>name;
+     int length=calculate(name);
+     cout<<length;
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+
+/*AQ:10)Create a C++ program with a function divide which takes two integers as arguments
+and prints their quotient. Handle division by zero case.*/
+//WITH PARAMETER WITH RETURN type.
+#include<bits/stdc++.h>
+using namespace std;
+float division(int a,int b)
+{
+    int c=a/b;
+    return c;                                                                                                                       
+}
+int main()
+{
+   int a,b;
+   cout<<"Please enter two numbers:\n";
+   cin>>a>>b;
+   float ans=division(a,b);
+   cout<<"The quotient is: "<<ans;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

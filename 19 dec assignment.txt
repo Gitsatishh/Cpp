@@ -1,0 +1,206 @@
+/*Q:1)If age is greater than 18 and less than 30, print "Age is in the young adult range"; otherwise, print "Age is not in the young adult range."*/
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int age;
+  cout<<"Enetr your age: ";
+  cin>>age;
+  if(age>=18&&age<=30)
+  {
+    cout<<"Age is in the young adult range";  
+  }
+    else
+    {
+        cout<<"Age is not in the young adult range";
+    }
+    return 0;
+}
+_____________________________________________________________________________________________________________________________________________________________________________________________
+/*Q:2)If temperature is greater than 25 and humidity is less than 70, print "It's a warm and dry day"; otherwise, print "The weather is not warm and dry."*/
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int temperature,humidity;
+  cout<<"Enetr temperature: ";
+  cin>>temperature;
+  cout<<"Enetr humidity: ";
+  cin>>humidity;
+  if(temperature>=25&&humidity<70)
+  {
+    cout<<"it's a warm and dry day";  
+  }
+    else
+    {
+        cout<<"The weather is not warm and dry";
+    }
+    return 0;
+}
+_____________________________________________________________________________________________________________________________________________________________________________________________
+/*Q:3)If score is greater than or equal to 60 and not equal to 100, print "You passed the exam"; otherwise, print "You did not pass the exam."*/
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+     int score;
+     cout<<"Enetr score: ";
+     cin>>score;
+     if(score>=60&&score!=100)
+     {
+        cout<<"You passed the exam"; 
+     }
+     else
+     {
+        cout<<"You did not pass the exam";
+     }
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+/*Q:4)If income is greater than 50000 or expenses are less than 30000, print "Financial situation is good"; otherwise, print "Financial situation is not good."*/
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+     int income,expenses;
+     cout<<"Enetr your income: ";
+     cin>>income;
+     cout<<"Enetr your expenses: ";
+     cin>>expenses;
+     if(income>=50000&&expenses<30000)
+     {
+        cout<<"Financial situation is good"; 
+     }
+     else
+     {
+        cout<<"Financial situation is not good";
+     }
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+/*Q:5)If speed is greater than 80 and temperature is greater than 30, print "High speed in hot weather"; otherwise, print "Normal driving conditions."*/
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+     int speed,temperature;
+     cout<<"Enetr speed: ";
+     cin>>speed;
+     cout<<"Enetr temperature: ";
+     cin>>temperature;
+     if(speed>80&&temperature>30)
+     {
+        cout<<"High speed in hot weather"; 
+     }
+     else
+     {
+        cout<<"Normal driving conditions";
+     }
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+/*Q:6)If quantity is greater than 100 or price is less than 10, print "Bulk purchase"; otherwise, print "Regular purchase."*/
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+     int quantity,price;
+     cout<<"Enetr quantity: ";
+     cin>>quantity;
+     cout<<"Enetr price: ";
+     cin>>price;
+     if(quantity>100&&price<10)
+     {
+        cout<<"Bulk purchase"; 
+     }
+     else
+     {
+        cout<<"Regular purchase";
+     }
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+/*Q:7)If age is less than 12 or age is greater than 65, print "You get a discount"; otherwise, print "No discount for you."*/
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+     int age;
+     cout<<"Enetr your age: ";
+     cin>>age;
+     if(age<12||age>65)
+     {
+        cout<<"You get a discount"; 
+     }
+     else
+     {
+        cout<<"No discount for you";
+     }
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+/*Q:8)If distance is greater than 500 and fuel is less than 20, print "Long trip with low fuel"; otherwise, print "Normal trip conditions."*/
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+     int distance,fuel;
+     cout<<"Enetr distance: ";
+     cin>>distance;
+     cout<<"Enetr fuel: ";
+     cin>>fuel;
+     if(distance>500&&fuel<20)
+     {
+        cout<<"Long trip with Lo fuel"; 
+     }
+     else
+     {
+        cout<<"Normal trip conditions";
+     }
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+/*Q:9)If temperature is greater than 35 and humidity is greater than 80, print "Extreme weather conditions"; otherwise, print "Normal weather conditions."*/
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+     int temperature,humidity;
+     cout<<"Enter temperature: ";
+     cin>>temperature;
+     cout<<"Enetr humidity: ";
+     cin>>humidity;
+     if(temperature>35&&humidity>80)
+     {
+        cout<<"Extreme weather conditions"; 
+     }
+     else
+     {
+        cout<<"Normal weather conditions";
+     }
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+/*Q:10)If score1 is greater than 80 and score2 is greater than 80, print "Both players performed well"; otherwise, print "At least one player did not perform well."*/
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+     int score1,score2;
+     cout<<"Enter score1: ";
+     cin>>score1;
+     cout<<"Enetr score2: ";
+     cin>>score2;
+     if(score1>80&&score2>80)
+     {
+        cout<<"Both players performed well"; 
+     }
+     else
+     {
+        cout<<"At least one player did not perform well";
+     }
+    return 0;
+}
+
+
+

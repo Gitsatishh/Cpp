@@ -1,0 +1,375 @@
+//Write a function that calculates the discounted price of an item based on the original price and a discount percentage.
+//Return the discounted price.
+#include<bits/stdc++.h>
+using namespace std;
+float product(int price, float discount)
+{
+    float net_price;
+    net_price=price*discount/100;
+    return net_price;
+}
+int main()
+{
+   int price;
+   float discount;
+   cout<<"Please enter the price of the product:  ";
+   cin>>price;
+   cout<<"Please enter percentage discount of the product: ";
+   cin>>discount;
+   float actual_price=product(price,discount);
+   cout<<"You get the discount of rupee: "<<actual_price;
+   cout<<"\nThe actual price after didduction is: "<<price-actual_price;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Implement a function that replaces all occurrences of a specified character in a string with another character. Return the modified string.
+#include <iostream>
+using namespace std;
+void change(string name,char ch1,char ch2)
+{
+    for(int i=1; i<=name.length(); i++)
+    {
+        if(name[i]==ch1)
+        {
+            name[i]=ch2;
+            cout<<" "<<name;
+        }
+    }
+}
+int main()
+{
+    string name;
+    char ch1,ch2;
+    cout<<"Please enter the string: ";
+    cin>>name;
+    cout<<"Please enter the character which you want to change: ";
+    cin>>ch1;
+    cout<<"Please enter the character which you want to change with: ";
+    cin>>ch2;
+    change(name,ch1,ch2);
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Write a function that solves a quadratic equation ax^2 + bx + c = 0. Return the roots of the equation
+#include <bits/stdc++.h>
+using namespace std;
+// Prints roots of quadratic equation
+// ax*2 + bx + x
+void findRoots(int a, int b, int c)
+{
+    // If a is 0, then equation is
+    // not quadratic, but linear
+    if (a == 0) {
+        cout << "Invalid";
+        return;
+    }
+ 
+    int d = b * b - 4 * a * c;
+    double sqrt_val = sqrt(abs(d));
+ 
+    if (d > 0) {
+        cout << "Roots are real and different ";
+        cout << (double)(-b + sqrt_val) / (2 * a) << " "
+             << (double)(-b - sqrt_val) / (2 * a);
+    }
+    else if (d == 0) {
+        cout << "Roots are real and same ";
+        cout << -(double)b / (2 * a);
+    }
+ 
+    // d < 0
+    else {
+        cout << "Roots are complex ";
+        cout << -(double)b / (2 * a) << " + i"
+             << sqrt_val / (2 * a) << " "
+             << -(double)b / (2 * a) << " - i"
+             << sqrt_val / (2 * a);
+    }
+}
+ 
+// Driver code
+int main()
+{
+    int a , b, c;
+    cout<<"Please enter the value of a: ";
+    cin>>a;
+    cout<<"Please enter the value of b: ";
+    cin>>b;
+    cout<<"Please enter the value of c: ";
+    cin>>c;
+    
+    findRoots(a, b, c);
+    return 0;
+}
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+//Create a function that calculates the distance between two points (x1, y1) and (x2, y2) in a 2D plane. Return the distance.
+#include<bits/stdc++.h>
+using namespace std;
+float distance(float x1,float y1,float x2,float y2)
+{
+    float distance=(y2-y1/x2-x1);
+    return distance;
+}
+int main()
+{
+    float x1,y1,x2,y2;
+    cout<<"Please enter x1: ";
+    cin>>x1;
+    cout<<"Please enter y1: ";
+    cin>>y1;
+    cout<<"Please enter x2: ";
+    cin>>x2;
+    cout<<"Please enter y2: ";
+    cin>>y2;
+    float ans=distance(x1,y1,x2,y2);
+    cout<<"The distance is: "<<ans;
+    
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+//Write a function that calculates the sum of factorials for a given range of numbers (from 1 to n). Return the sum.
+#include <iostream>
+using namespace std;
+void fact(int num)
+{
+    int fact=1;
+    int sum=0;
+       for(int i=1; i<=num; i++)
+       {
+           fact=fact*i;
+            sum=sum+fact;
+        }
+        cout<<" "<<sum;
+}
+
+int main()
+{
+    int num;
+    cout<<"Please enter the number: ";
+    cin>>num;
+    fact(num);
+    return 0;
+}
+
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+
+//Define a function that takes an integer as input and returns its reversed version. For example, input 123 should return 321.
+#include <iostream>
+using namespace std;
+int main()
+{
+    int num;
+    cout<<"Please enter the number: ";
+    cin>>num;
+    int rem,sum=0;
+    while(num>0)
+    {
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num%10;
+    }
+    return 0;
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Create a function that generates a random number between a given range (min and max). Return the random number.
+#include <iostream>
+using namespace std;
+int main()
+{
+   int a,b;
+   cout<<"Enter the number:\n";
+   cin>>a>>b;
+   for(int i=a; i<=b; i++)
+   {
+       cout << (rand() % (b - a + 1)) + a << " " ;
+   }
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+//Implement a function that converts an amount from one currency to another based on a given exchange rate. Return the converted amount.
+#include <iostream>
+using namespace std;
+int main()
+{
+   int amount;
+   cout<<"Enter the Indian rupee to conver into USD: ";
+   cin>>amount;
+   float usd=amount/83.36;
+   cout<<"You have "<<usd<<" USD";
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+//Write a function that checks if a given positive integer is a power of two. Return a boolean value based on the result.
+#include <iostream>
+using namespace std;
+int main()
+{
+  int num;
+  cout<<"Enter the number: ";
+  cin>>num;
+  if(num%2==0)
+  {
+      cout<<"Your number "<<num<<" is power of 2";
+  }
+  else
+  {
+      cout<<"Your number "<<num<<" is not power of 2";
+  }
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+//Define a function that takes two strings as parameters and concatenates them. Return the resulting string
+#include <iostream>
+using namespace std;
+int main()
+{
+  string str1,str2,full_name;
+  cout<<"Enter your first name: ";
+  cin>>str1;
+  cout<<"Enter your last name: ";
+  cin>>str2;
+  full_name=str1+str2;
+  cout<<"sum of string 1 and string 2 is: "<<full_name;
+  
+    return 0;
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+
+//Create a function that calculates the sum of even Fibonacci numbers up to a given limit. Return the sum.
+#include <iostream>
+using namespace std;
+int main()
+{
+ int num, a=0,b=1,c;
+ cout<<"Please enter your number: ";
+ cin>>num;
+ cout<<a<<" "<<b;
+ for(int i=1; i<=num; i++)
+ {
+   c=b+a;
+   a=b;
+   b=c;
+   cout<<" "<<c;
+ }
+  
+    return 0;
+}_______________________________________________________________________________________________________________________________________________________________________________________
+//Write a function that calculates the area of a triangle given its base and height. Return the area.
+#include <iostream>
+using namespace std;
+int main()
+{
+   int base,height,area;
+   cout<<"Enter base: ";
+   cin>>base;
+   cout<<"Enter height: ";
+   cin>>height;
+   area=base*height/2;
+   cout<<" "<<area;
+   
+    return 0;
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+
+//Implement a function that takes a string as
+//input and returns a new string where the case of each character is reversed (convert uppercase to lowercase and vice versa).
+#include<bits/stdc++.h>
+using namespace std;
+
+//str[0]=A
+//ascii character
+//A=65 Z=90 -->capital
+//a=97 Z=122 --->small
+//97-65=32
+
+string replace_all(string str)
+{
+    //algorithm(linear search)
+    for(int i=0;i<str.length();i++)
+    {
+        if(str[i]>='A' && str[i]<='Z')
+        {
+            str[i]=str[i] + 32 ;//replace
+        }
+        else if(str[i]>='a' && str[i]<='z')
+        {
+            str[i]=str[i] - 32 ;//replace
+        }
+    }
+    //str[0]='z';
+    return str;
+   
+   
+}
+int main()
+{
+    string str;
+    cout<<"Enter the String\n";
+    cin>>str;
+    string ans = replace_all(str);
+    cout<<ans;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

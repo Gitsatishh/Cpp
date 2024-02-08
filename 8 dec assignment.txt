@@ -1,0 +1,298 @@
+/*Q:1)Write a program that takes two strings as input and concatenates them.Create a program that calculates and prints the length of 
+a given string.*/
+#include <iostream>
+
+using namespace std;
+void full_name(string fname, string lname)
+{
+    string name=fname+lname;
+        cout<<name.length();
+}
+int main()
+{
+    string fname,lname;
+    cout<<"Please enter your full name: ";
+    cin>>fname>>lname;
+    full_name(fname,lname);
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q:2)Write a program to count and print the number of occurrences of a specific character in a string.
+#include <iostream>
+
+using namespace std;
+void find(string name)
+{
+    int calculate=0;
+    for(int i=1; i<=name.length(); i++){
+    if(name[i]=='i'|| name[i]=='I')
+    {
+        calculate++;  
+    }}
+    cout<<calculate;
+    
+}
+int main()
+{
+    string name;
+    cout<<"please enter the string:";
+    getline(cin,name);
+    find(name);
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q:3)Develop a program that converts all characters in a string to uppercase.
+#include <iostream>
+using namespace std;
+void Develop(string str)
+{
+    for(int i=0; i<=str.length(); i++)
+    {
+        if(str[i]>='a'&& str[i]<='z')
+        {
+            str[i]=str[i] - 32;
+        }
+    }
+    cout<<str;
+}
+int main()
+{
+   string str;
+   cout<<"Please enter a sentence:\n";
+   getline(cin,str);
+   Develop(str);
+    return 0;
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q:4)Write a program that converts all characters in a string to lowercase.
+#include <iostream>
+using namespace std;
+void Develop(string str)
+{
+    for(int i=0; i<=str.length(); i++)
+    {
+        if(str[i]>='A'&& str[i]<='Z')
+        {
+            str[i]=str[i] + 32;
+        }
+    }
+    cout<<str;
+}
+int main()
+{
+   string str;
+   cout<<"Please enter a sentence:\n";
+   getline(cin,str);
+   Develop(str);
+    return 0;
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q:5)Create a program that extracts and prints a substring from a given string.
+#include <iostream>
+using namespace std;
+void Develop(string str)
+{
+    string neww=str.substr(0);
+    cout<<neww;
+}
+int main()
+{                                                                                      DOUBT
+   string str;
+   cout<<"Please enter a sentence:\n";
+   getline(cin,str);
+   Develop(str);
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q:6)Write a program that compares two strings and prints whether they are equal or not.
+#include <iostream>
+using namespace std;
+void Develop(string str1,string str2)
+{
+    if(str1==str2)
+    {
+        cout<<"equal";
+    }
+    else{cout<<"not equal";}
+}
+int main()
+{
+   string str1,str2;
+   cout<<"Please enter something:\n";
+   cin>>str1>>str2;
+   Develop(str1,str2);
+    return 0;
+}
+
+_________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q:7)Develop a program to check and print whether a given string is a palindrome or not.
+#include <iostream>
+using namespace std;
+void Develop(string str)
+{
+    string neww=str;
+     
+     reverse( neww.begin(), neww.end() );
+     if(str==neww)
+     {
+        cout<<"palindrome"; 
+     }
+     else
+     {
+        cout<<"Not a palindrome"; 
+     }
+} 
+int main()
+{
+   string str;
+   cout<<"Please enter something:\n";
+   cin>>str;
+   Develop(str);
+    return 0;
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+//Q:8)Write a program that reverses a given string and prints the result.
+#include <iostream>
+using namespace std;
+void Develop(string str)
+{
+     reverse( str.begin(), str.end() );
+    cout<<str;
+} 
+int main()
+{
+   string str;
+   cout<<"Please enter something:\n";
+   cin>>str;
+   Develop(str);
+    return 0;
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q:9)Create a program that counts and prints the number of words in a given string.
+#include <iostream>
+using namespace std;
+void Develop(string str)
+{
+    int a=0;
+     for(int i=1; i<=str.length(); i++)
+     {
+        a++; 
+     }
+     cout<<a;
+} 
+int main()
+{
+   string str;
+   cout<<"Please enter something:\n";
+   cin>>str;
+   Develop(str);
+    return 0;
+}
+
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+//Q:11)Create a program to count the number of vowels and consonants in a given string.
+#include<bits/stdc++.h>
+using namespace std;
+void count(string a)
+{
+    int num=0;
+    int num2=-1;
+   for(int i=0; i<=a.length(); i++)
+   {
+       num2++;
+       if(a[i]=='a'||a[i]=='e'||a[i]=='i'||a[i]=='o'||a[i]=='u'||a[i]=='A'||a[i]=='E'||a[i]=='I'||a[i]=='O'||a[i]=='U')
+       {
+           num++;
+       }
+   }
+   num2 = num2-num;
+   cout<<"There are "<<num<<" vowels and "<<num2<<" consonants in your string";
+}
+
+
+int main()
+{
+    string a;
+    cout<<"Please enter a string: ";
+    cin>>a;
+    count(a);
+    return 0;
+}
+____________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,286 @@
+/*Q1. **Even or Odd:**
+Write a C++ program that takes an integer as input and uses an `if-else` statement to determine
+whether the number is even or odd.*/
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int num;
+    cout<<"Enter the number: ";
+    cin>>num;
+    if(num%2==0)
+    {
+        cout<<"the number is even number";
+    }
+    else{
+        cout<<"The number is odd number";
+    }
+    return 0;
+}
+______________________________________________________________________________________________________________
+
+/*Q2. **Grade Calculator:**
+Create a program that takes a student's percentage as input and outputs their corresponding grade
+(A, B, C, etc.) using `if-else` statements.*/
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    float percentage;
+    cout<<"Enter your percentage: ";
+    cin>>percentage;
+    if((percentage>80.0) &&(percentage<=100.0))
+    {
+        cout<<"your grade is:A";
+    }
+    else if((percentage>=60.0)&&(percentage<=80.0))
+    {
+        cout<<"Your grade is:B";
+    }
+    else if((percentage>=35.0)&&(percentage<60.0))
+    {
+        cout<<"Your grade is:C";
+    }
+    else
+    {
+        cout<<"Lord punit: Tu to gya bete";
+    }
+    return 0;
+}
+______________________________________________________________________________________________________________
+/*Q3. **Leap Year Checker:**
+Write a program that checks if a given year is a leap year or not. Use an `if-else` statement and
+logical operators to make the determination..*/
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int year;
+    cout<<"Enter year: ";
+    cin>>year;
+    if( (year%4==0) )
+    {
+        cout<<"The entered year is leap year";
+    }
+    else
+    {
+        cout<<"The entered year is not leap year";
+    }
+    return 0;
+}
+______________________________________________________________________________________________________________
+/*Q4. **Triangle Type:**
+Develop a program that takes three angles as input and determines whether the triangle is acute,
+obtuse, or right-angled using `if-else` statements.*/
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int angle1,angle2,angle3;
+    cout<<"Enter three angles:\n";
+    cin>>angle1>>angle2>>angle3;
+    if( (angle1+angle2+angle3<90) )
+    {
+        cout<<"Acute angle triangle";
+    }
+    else if( (angle1+angle2+angle3==90)  )
+    {
+        cout<<"right-angled triangle";
+    }
+    else if((angle1+angle2+angle3>90))
+    {
+        cout<<"Obtuse angle triangle";
+    }
+    
+    return 0;
+}
+______________________________________________________________________________________________________________
+/*Q5. **Positive, Negative, or Zero:**
+Create a C++ program that takes an integer as input and prints whether it is positive, negative, or
+zero using `if-else` statements.*/
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int num;
+    cout<<"Enter a number: ";
+    cin>>num;
+    if( (num<0) )
+    {
+        cout<<"Negative integer";
+    }
+    else if( (num==0)  )
+    {
+        cout<<"zero";
+    }
+    else if((num>0))
+    {
+        cout<<"positive integer";
+    }
+    
+    return 0;
+}
+______________________________________________________________________________________________________________
+/*Q6. **Login System:**
+Implement a basic login system where the user enters a username and password. Use `if-else`
+statements to validate the login credentials.*/
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string uname="admin",passwd="admin";
+    string user_name,password;
+    cout<<"Enter your username: ";
+    getline(cin,user_name);
+    cout<<"Enter your password: ";
+    getline(cin,password);
+    if( (user_name==uname)&&(password==passwd) )
+    {
+        cout<<"Login successfully";
+    }
+    else
+    {
+        cout<<"Login failed";
+    }
+    
+    return 0;
+}
+______________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+______________________________________________________________________________________________________________
+/*Q8. **Divisibility Checker:**
+Create a program that checks if a given number is divisible by both 5 and 7. Use logical operators
+within an `if` statement for the check.*/
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int num;
+    cout<<"Enter a number: ";
+    cin>>num;
+    if( (num%5==0)&&(num%7==0) )
+    {
+        cout<<"The number is is divisible by both 5 and 7";
+    }
+    else
+    {
+        cout<<"The number is not divisible by both 5 and 7";
+    }
+    
+    return 0;
+}
+______________________________________________________________________________________________________________
+/*Q9. **Temperature Converter:**
+
+Develop a program that converts temperatures between Celsius and Fahrenheit. Use `if-else`
+statements to handle the conversion based on user input.*/
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    float Celsius,Fahrenheit;
+    cout<<"Enter a Celsius: ";
+    cin>>Celsius;
+    Fahrenheit=Celsius*1.8+32.0;
+    if( (Celsius<25))
+    {
+        cout<<"COLD";
+    }
+    else if((Celsius>25)&&(Celsius<=35))
+    {
+        cout<<"NORMAL";
+    }
+    else{
+        cout<<"HOT";
+    }
+    return 0;
+}
+______________________________________________________________________________________________________________
+/*Q10. **Largest of Three Numbers:**
+Write a C++ program that takes three numbers as input and outputs the largest one using `if-else`
+statements and relational operators.*/
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    float num1,num2,num3;
+    cout<<"Enter three numbers:\n";
+    cin>>num1>>num2>>num3;
+    if((num1>num2)&&(num1>num3)) 
+    {
+        cout<<"First number is largest";
+    }
+    else if((num2>num1)&&(num2>num3))
+    {
+        cout<<"Second number is largest";
+    }
+    else{
+        cout<<"Third number is largest";
+    }
+    return 0;
+}
+______________________________________________________________________________________________________________
+/*Q11. **Vowel or Consonant:**
+Create a program that takes a character as input and determines whether it is a vowel or
+consonant using `if-else` statements.*/
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    char alpha;
+    cout<<"Enter a character:\n";
+    cin>>alpha;
+    if((alpha=='a'||alpha=='A')||(alpha=='e'||alpha=='E')||(alpha=='i'||alpha=='I')||(alpha=='o'||alpha=='O')||(alpha=='u'||alpha=='U')) 
+    {
+        cout<<"Entered character is a VOWEL";
+    }
+    else{
+        cout<<"Entered character is a CONSONANT";
+    }
+    return 0;
+}
+______________________________________________________________________________________________________________
+/*Q12. **Age Classifier:**
+Write a program that classifies a person into different age groups (child, teenager, adult, senior)
+based on their age using `if-else` statements.*/
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int age;
+    cout<<"Enter your age: ";
+    cin>>age;
+    if((age<=12)) 
+    {
+        cout<<"CHILD";
+    }
+    else if((age>12)&&(age<=19))
+    {
+        cout<<"TEENAGER";
+    }
+    else if((age>19)&&(age<40))
+    {
+        cout<<"ADULT";
+    }
+    else{
+        cout<<"SENIOR";
+    }
+    return 0;
+}
+______________________________________________________________________________________________________________
+
+                 
