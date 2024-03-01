@@ -1,0 +1,430 @@
+//1. Write a for loop that prints numbers from 1 to 10.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    for(int i=1; i<=10; i++)
+    {
+        cout<<i<<endl;
+    }
+    return 0;
+}
+______________________________________________________________________________________________________________
+//2. Create a for loop that counts down from 10 to 1 and prints each number.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    for(int i=10; i>=1; i--)
+    {
+        cout<<i<<endl;
+    }
+    return 0;
+}
+_______________________________________________________________________________________________________________
+//3. Write a for loop to print even numbers from 2 to 20.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    for(int i=2; i<=20; i+=2)
+    {
+        cout<<i<<endl;
+    }
+    return 0;
+}
+______________________________________________________________________________________________________________
+//4. Create a for loop to print the first 5 multiples of 3.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    for(int i=3; i<=15; i+=3)
+    {
+        cout<<i<<endl;
+    }
+    return 0;
+}
+______________________________________________________________________________________________________________
+//5. Write a for loop to calculate the sum of numbers from 1 to 10.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int sum=0;
+    for(int i=1; i<=10; i++)
+    {
+        sum=sum+i;
+    }
+    cout<<sum;
+    return 0;
+}
+______________________________________________________________________________________________________________
+//6. Create a for loop that prints the square of numbers from 1 to 5.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    for(int i=1; i<=5; i++)
+    {
+        cout<<"The square of "<<i<<" is "<<i*i<<endl;
+    }
+    return 0;
+}
+______________________________________________________________________________________________________________
+//8. Create a for loop to print each character of a string on a new line.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string name;
+    cout<<"Enter name: ";
+    getline(cin,name);
+    for(int i=0; i<name.length(); i++)
+    {
+        cout<<name[i]<<endl;
+    }
+    return 0;
+}
+
+______________________________________________________________________________________________________________
+//13. Write a for loop to check if a number is prime or not.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int num;
+    bool flag=0;
+    cout<<"Enter a number: ";
+    cin>>num;
+    for(int i=2; i<num; i++)
+    {
+      if(num%i==0)
+      {
+        cout<<"Not a prime number";
+        flag=1;
+        break;
+      }
+    } 
+    if(flag==0)
+    {
+        cout<<"Prime number";
+    }
+    return 0;
+}
+
+_________________________________________________________________________________________________________________
+//14. Create a for loop to print a multiplication table of a given number up to 10.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int num;
+    cout<<"Enter a number: ";
+    cin>>num;
+    for(int i=1; i<=10; i++)
+    {
+        cout<<num<<" * "<<i<<" = "<<num*i<<endl;
+    }
+    return 0;
+}
+__________________________________________________________________________________________________________________
+//15. Write a for loop to reverse a given string.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string str;
+    cout<<"Enter a string: ";
+    cin>>str;
+    for(int i=str.length(); i>=0; i--)
+    {
+        cout<<str[i]<<endl;
+        
+    }
+    return 0;
+}
+__________________________________________________________________________________________________________________
+//16. Create a for loop to find the sum of digits of a given number.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int num,sum=0;
+    cout<<"Enter a number: ";
+    cin>>num;
+    for(int i=1; i<=num; i++)
+    {
+        sum=sum+i;
+        
+    }
+    cout<<sum;
+    return 0;
+}
+___________________________________________________________________________________________________________________
+//17. Write a for loop to check if a given string is a palindrome.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string str,copy_str,last_name;
+    cout<<"Enter a string: ";
+    cin>>str;
+    copy_str=str;
+    for(int i=str.length()-1; i>=0; i--)
+    {
+        last_name=last_name+str[i];
+    }
+    if(copy_str==last_name)
+    {
+        cout<<"Palindrome";
+    }
+    else
+    {
+        cout<<"Not a Palindrome";
+    } 
+    return 0;
+}
+______________________________________________________________________________________________________________________
+//19. Write a for loop to find the GCD (Greatest Common Divisor) of two numbers.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int num1,num2,max=0,GCD=1;
+    cout<<"Enter the two numbers for GCD"<<endl;
+    cin>>num1>>num2;
+    int copy1=num1,copy2=num2;
+    if(num1>num2){max=num1;}
+    else if(num2>num1){max=num2;}
+    for(int i=2; i<=max; i++)
+    {
+       if( (num1%i==0) && (num2%i==0) )
+       {
+            GCD=GCD*i;
+            num1=num1/i;
+            num2=num2/i;
+       }
+    }
+    cout<<"GCD of "<<copy1<<" and "<<copy2<<" is:"<<GCD;
+    return 0;
+}
+____________________________________________________________________________________________________________________
+//20. Create a for loop to find the LCM (Least Common Multiple) of two numbers.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int num1,num2,LCM=1;
+    cout<<"Enter the two numbers for LCM"<<endl;
+    cin>>num1>>num2;
+    int copy1=num1,copy2=num2;
+    for(int i=2; i<=num2; i++)
+    {
+       if( (num1%i==0)  && (num2%i==0)  )
+       {
+            LCM=LCM*i;
+            num1=num1/i;
+            num2=num2/i;
+       }
+        if( num1%i==0)
+       {
+           LCM=LCM*i;
+           num1=num1/i;
+       }
+        if(num2%i==0)  
+       {
+           LCM=LCM*i;
+           num2=num2/i;
+       }
+    }
+    cout<<"LCM of "<<copy1<<" and "<<copy2<<" is:"<<LCM;
+    return 0;
+}
+_________________________________________________________________________________________________________________________
+//21. Write a for loop to print the ASCII values of all lowercase letters.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    char alpha='a';
+   for(int i=97; i<=122; i++)
+   {
+       cout<<"The ASCII value of "<<alpha<<" is "<<i<<endl;
+       alpha++;
+   }
+    return 0;
+}
+________________________________________________________________________________________________________________________
+//24. Create a for loop to print a pattern of stars in the shape of a right triangle.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  for(int i=1; i<=10; i++)
+  {
+    for(int j=1; j<=10; j++)
+    {
+       if(    (i==j&&j<10)   ||     (i>1 && j==1)    ||   (i==10&&j<7)    )
+       {
+           cout<<"* ";
+       }
+       else
+       {
+           cout<<" ";
+       }
+    }
+    cout<<endl;
+  }
+    return 0;
+}
+
+________________________________________________________________________________________________________________________
+//25. Write a for loop to calculate the sum of the first 10 odd numbers.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int sum=0;
+  for(int i=1; i<=10; i+=2)
+  {
+      sum=sum+i;
+  }
+  cout<<"The sum of first 10 odd numbers is: "<<sum;
+    return 0;
+}
+_____________________________________________________________________________________________________________________
+//26. Create a for loop to find the product of numbers from 1 to 5.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int multiply=1;
+  for(int i=1; i<=5; i++)
+  {
+    multiply=multiply*i;
+  }
+   cout<<multiply<<endl;
+    return 0;
+}
+______________________________________________________________________________________________________________________
+//28. Create a for loop to generate a list of all prime numbers between 1 and 50.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int j;
+   for(int i=1; i<50; i++)
+  {
+    for( j=2; j<i; j++)
+    {
+        if(i%j==0)
+        {
+            break;
+        }
+    }
+    if(i==j)
+    {
+        cout<<i<<endl;
+    }
+  }
+   
+    return 0;
+}
+____________________________________________________________________________________________________________________________
+//29. Write a for loop to print numbers from 1 to 100, but replace multiples of 3 with "Fizz" and multiples of 5 with "Buzz".
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    for(int i=1; i<=100; i++)
+    {
+        if(i%3==0 && i%5==0)
+        {
+            cout<<"Fizz  Buzz"<<endl;
+        }
+        else if(i%3==0)
+        {
+            cout<<"Fizz"<<endl;
+        }
+        else if(i%5==0)
+        {
+            cout<<"Buzz"<<endl;
+        }
+        else
+        {
+           cout<<i<<endl;
+        }
+    }
+    
+    return 0;
+}
+
+__________________________________________________________________________________________________________________________________
+//33. Write a for loop to reverse the digits of a given number.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string num;
+    cout<<"Enter all numbers: ";
+    getline(cin,num);
+    for(int i=num.length(); i>=0; i--)
+    {
+       cout<<num[i]<<endl;
+    }
+    return 0;
+}
+____________________________________________________________________________________________________________________________________
+
+//35. Write a for loop to check if a given number is an Armstrong number.
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+    string num;
+    int sum=0;
+    cout<<"Enter any number: ";
+    getline(cin,num);
+    for(int i=0; i<=num.length()-1; i++)
+    {
+       char current_char=num[i];
+       int current_digit=int(current_char)-'0';
+       sum=sum+current_digit*current_digit*current_digit;
+    }
+    if(sum==stoi(num))
+    {
+        cout<<"Armstrong";
+    }
+    else
+    {
+        cout<<"Not Armstrong";
+    }
+    
+    return 0;
+}
+
+__________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
